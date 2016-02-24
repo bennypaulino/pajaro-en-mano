@@ -8,7 +8,10 @@ class QuotesController < ApplicationController
   end
 
   def create
-    Quote.create(quote_params)
+    @quote = Quote.create(quote_params)
+    if @quote.invalid?
+      flash[:error] = '<strong>No se podia guardar,</strong> el frase ingresado es inválido.'
+    end
     redirect_to root_path
   end
 
