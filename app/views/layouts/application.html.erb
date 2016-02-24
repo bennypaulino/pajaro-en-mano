@@ -24,7 +24,21 @@
   <hr />
   <br class="clear" />
 
+<div class="container">
 <%= yield %>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="col-xs-6">
+      <%= link_to "Otro más!", "#", class: 'next-quote' %>
+    </div>
+    <div class="col-xs-6 footer-blurb">
+      Fabricado con mucho orgullo y amor en Orlando, FL departe de <a href="http://www.iseeincode.com">Benny Paulino</a>.
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
