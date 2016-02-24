@@ -9,15 +9,17 @@
 <body>
   <header>
     <div class="col-xs-3">
-      <div class="logo">
-        <%= image_tag 'bird-in-hand-100px.jpg', class: 'img-responsive' %>
-      </div>
+      <%= link_to root_path, class: 'logo' do %>
+        <div class="logo">
+          <%= image_tag 'bird-in-hand-100px.jpg', class: 'img-responsive' %>
+        </div>
+      <% end %>
     </div>
     <div class="col-xs-4 slogan">
       Refránes queridas desde 2016
     </div>
     <div class="col-xs-5 links">
-      <%= link_to 'Contribuir', '#' %>
+      <%= link_to 'Contribuir', new_quote_path %>
       <%= link_to 'Sobre', '#' %>
     </div>
   </header>
@@ -31,7 +33,7 @@
 <div class="footer">
   <div class="container">
     <div class="col-xs-6">
-      <%= link_to "Otro más!", "#", class: 'next-quote' %>
+      <%= link_to "Otro más!", root_path, class: 'next-quote' %>
     </div>
     <div class="col-xs-6 footer-blurb">
       Fabricado con mucho orgullo y amor en Orlando, FL departe de <a href="http://www.iseeincode.com">Benny Paulino</a>.
