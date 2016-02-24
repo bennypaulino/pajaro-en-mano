@@ -3,18 +3,19 @@
 }
 
 .slogan {
-  font-family: Palatino;
-  font-style: italic;
+  font-family: bilboregular;
   padding-top: 26px;
 }
 
 .links {
   padding-top: 26px;
+  font-family: 'bilboregular'
 }
 
 .links a {
   color: #799E35;
   font-size: 25px;
+  font-family: 'bilboregular'
 }
 
 header {
@@ -28,4 +29,19 @@ header {
 
 hr {
   clear: both;
+}
+
+h1 {
+  font-family: 'bilboregular';
+  font-weight: 600;
+  letter-spacing: .1em;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: 'bilboregular';
+}
+
+h3 {
+  font-family: 'bilboregular';
 }
