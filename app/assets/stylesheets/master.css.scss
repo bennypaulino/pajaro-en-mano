@@ -11,6 +11,7 @@
 .slogan {
   font-family: bilboregular;
   padding-top: 26px;
+  font-size: 1.4em;
 }
 
 .links {
@@ -20,7 +21,7 @@
 
 .links a {
   color: #799E35;
-  font-size: 25px;
+  font-size: 2.5em;
   font-family: 'bilboregular'
 }
 
@@ -64,6 +65,7 @@ p {
   color: #8B2F5F;
   font-family: 'bilboregular';
   font-size: 24px;
+  font-style: bold;
 }
 
 .footer-blurb {
@@ -74,6 +76,32 @@ p {
 
 #myModalLabel {
     font-family: 'bilboregular';
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 2.4em;
+    font-weight: 600;
+    word-spacing: .2em;
+}
+
+.modal-body {
+  font-family: 'Flamenco', cursive;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+h3 span {
+  color: #A29BA6;
+}
+
+#tagLine {
+  font-family: 'bilboregular';
+  color: #ddd;
+}
+
+::selection {
+  background-color: #E2FFAF;
 }

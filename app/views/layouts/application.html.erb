@@ -15,12 +15,13 @@
         </div>
       <% end %>
     </div>
-    <div class="col-xs-4 slogan">
+    <div class="col-sm-4 hidden-xs slogan">
       Refránes queridas desde 2016
     </div>
-    <div class="col-xs-5 links">
+    <div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
       <!-- Button trigger modal -->
       <%= link_to 'Contribuir', new_quote_path, data: {toggle: 'modal', target: '#myModal'} %>
+      &nbsp;&nbsp;&nbsp;
       <%= link_to 'Sobre', sobre_path %>
     </div>
   </header>
@@ -36,17 +37,17 @@
         </div>
         <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">
-          <%= f.input :saying %>
+          <%= f.input :saying, label: "Un dicho o refrán favorito...", placeholder: "Más vale un pájaro en mano que ciento volando." %>
           <br>
-          <%= f.input :author %>
+          <%= f.input :author, label: "Quién es el que le encanta decir esto?", placeholder: "Fulano de la vuelta abajo, o su nombre" %>
           <br>
-          <%= f.input :country %>
+          <%= f.input :country, label: "País de origen..." %>
           <br>
-          <%= f.submit 'Crear', class: 'btn btn-success' %>
+          
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <%= f.submit 'Crear', class: 'btn btn-success' %>
         </div>
         <% end %>  
       </div>
@@ -70,11 +71,11 @@
 
 <div class="footer">
   <div class="container">
-    <div class="col-xs-6">
+    <div class="col-xs-12 col-sm-6">
       <%= link_to "Otro más!", root_path, class: 'next-quote' %>
     </div>
-    <div class="col-xs-6 footer-blurb">
-      Fabricado con mucho orgullo y amor en Orlando, FL departe de <a href="http://www.iseeincode.com">Benny Paulino</a>.
+    <div class="col-xs-12 col-sm-6 footer-blurb">
+      Este sitio ha sido creado con mucho orgullo y amor en Orlando, FL departe de <a href="http://www.iseeincode.com">Benny Paulino</a>.
     </div>
   </div>
 </div>
