@@ -1,3 +1,31 @@
 .clear {
   clear: both;
 }
+
+.slogan {
+  font-family: Palatino;
+  font-style: italic;
+  padding-top: 26px;
+}
+
+.links {
+  padding-top: 26px;
+}
+
+.links a {
+  color: #799E35;
+  font-size: 25px;
+}
+
+header {
+  border-top: 9px solid #582A72;
+}
+
+.logo {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+hr {
+  clear: both;
+}

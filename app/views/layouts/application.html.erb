@@ -9,17 +9,19 @@
 <body>
   <header>
     <div class="col-xs-3">
-      LOGO
+      <div class="logo">
+        <%= image_tag 'bird-in-hand-100px.jpg', class: 'img-responsive' %>
+      </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-4 slogan">
       Refránes queridas desde 2016
     </div>
-    <div class="col-xs-5">
+    <div class="col-xs-5 links">
       <%= link_to 'Contribuir', '#' %>
       <%= link_to 'Sobre', '#' %>
     </div>
   </header>
-
+  <hr />
   <br class="clear" />
 
 <%= yield %>
